@@ -38,10 +38,10 @@
             </a>
             <img src="points.jpg" alt="User Icon" /><br />
             <b>Let's Start...</b><br /><br />
-            <button class="btn btn-info" onclick="redirect_soon()">Water</button><br />
+            <button class="btn btn-info" onclick="redirect_water()">Water</button><br />
             <button class="btn" style="--color: #ffffff; --background-color: #dc1264; --border-color: #ec407a" onclick="redirect_product()">Product</button><br />
             <button class="btn btn-success" onclick="redirect_food()">Food</button><br />
-            <button class="btn btn-warning" onclick="redirect_soon()">Electricity</button><br />
+            <button class="btn btn-warning" onclick="redirect_elec()">Electricity</button><br />
             <a href="Start.html"><img src="home1.png" /></a>
             <img src="footer.jpg" />
         </div>
@@ -55,8 +55,11 @@
             window.location.href = "product.html"
         }
     
-        function redirect_soon() {
-            window.location.href = "soon.html"
+        function redirect_water() {
+            window.location.href = "water.html"
+        }
+        function redirect_elec() {
+                    window.location.href = "electricity.html"
         }
     </script>
 
