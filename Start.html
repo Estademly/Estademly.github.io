@@ -34,20 +34,29 @@
     <div class="wrapper fadeInDown">
         <div id="formContent">
             <a href="index.html">
-            <img src="back.jpg" alt="User Icon" /></a>
+                <img src="back.jpg" alt="User Icon" />
+            </a>
             <img src="points.jpg" alt="User Icon" /><br />
             <b>Let's Start...</b><br /><br />
-            <button class="btn btn-info">Water</button><br />
-            <button class="btn" style="--color: #ffffff; --background-color: #dc1264; --border-color: #ec407a">Product</button><br />
-            <button class="btn btn-success" onclick="redirect()">Food</button><br />
-            <button class="btn btn-warning">Electricity</button><br />
+            <button class="btn btn-info" onclick="redirect_soon()">Water</button><br />
+            <button class="btn" style="--color: #ffffff; --background-color: #dc1264; --border-color: #ec407a" onclick="redirect_product()">Product</button><br />
+            <button class="btn btn-success" onclick="redirect_food()">Food</button><br />
+            <button class="btn btn-warning" onclick="redirect_soon()">Electricity</button><br />
             <a href="Start.html"><img src="home1.png" /></a>
             <img src="footer.jpg" />
         </div>
     </div>
     <script>
-        function redirect() {
+        function redirect_food() {
             window.location.href = "food.html"
+        }
+
+        function redirect_product() {
+            window.location.href = "product.html"
+        }
+    
+        function redirect_soon() {
+            window.location.href = "soon.html"
         }
     </script>
 
